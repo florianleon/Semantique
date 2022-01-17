@@ -1,0 +1,366 @@
+@prefix : <http://www.semanticweb.org/florianleon/ontologies/2021/11/TP1#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/florianleon/ontologies/2021/11/TP1> .
+
+<http://www.semanticweb.org/florianleon/ontologies/2021/11/TP1> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/florianleon/ontologies/2021/11/TP1#OWLObjectProperty_0ff068e0_0f38_4bff_aa9d_c9e7c208b830
+:OWLObjectProperty_0ff068e0_0f38_4bff_aa9d_c9e7c208b830 rdf:type owl:ObjectProperty ;
+                                                        owl:inverseOf :OWLObjectProperty_7b61561b_a37c_475d_b2bb_7eac94c49c59 ;
+                                                        rdfs:domain :OWLClass_2c2590f6_401b_44e4_ba99_d1d426c16165 ;
+                                                        rdfs:range :OWLClass_2c2590f6_401b_44e4_ba99_d1d426c16165 ;
+                                                        rdfs:label "contient"@fr .
+
+
+###  http://www.semanticweb.org/florianleon/ontologies/2021/11/TP1#OWLObjectProperty_1ae9bc31_6162_4d52_aece_25843020f9c0
+:OWLObjectProperty_1ae9bc31_6162_4d52_aece_25843020f9c0 rdf:type owl:ObjectProperty ;
+                                                        rdfs:domain :OWLClass_914fe159_dc32_4fc8_994a_73b6fb77ab17 ;
+                                                        rdfs:range :OWLClass_d49d9033_e9f5_4a0d_ac06_65d8b31096fc ;
+                                                        rdfs:label "a pour symptome"@fr .
+
+
+###  http://www.semanticweb.org/florianleon/ontologies/2021/11/TP1#OWLObjectProperty_4035681a_e8d5_4302_b0af_b258a5825000
+:OWLObjectProperty_4035681a_e8d5_4302_b0af_b258a5825000 rdf:type owl:ObjectProperty ;
+                                                        rdfs:domain :OWLClass_914fe159_dc32_4fc8_994a_73b6fb77ab17 ;
+                                                        rdfs:range :OWLClass_d49d9033_e9f5_4a0d_ac06_65d8b31096fc ;
+                                                        rdfs:label "mesure"@fr .
+
+
+###  http://www.semanticweb.org/florianleon/ontologies/2021/11/TP1#OWLObjectProperty_58eae586_10e3_4636_86d4_c774310f5c60
+:OWLObjectProperty_58eae586_10e3_4636_86d4_c774310f5c60 rdf:type owl:ObjectProperty ;
+                                                        rdfs:subPropertyOf :OWLObjectProperty_0ff068e0_0f38_4bff_aa9d_c9e7c208b830 ;
+                                                        rdf:type owl:FunctionalProperty ;
+                                                        rdfs:domain :OWLClass_fcecb7b0_1808_4828_bc14_90cca96dfe4e ;
+                                                        rdfs:range :OWLClass_1b50ed23_be0e_4edf_a5dc_8b7e4f18fe3e ;
+                                                        rdfs:label "a pour capitale"@fr .
+
+
+###  http://www.semanticweb.org/florianleon/ontologies/2021/11/TP1#OWLObjectProperty_7b61561b_a37c_475d_b2bb_7eac94c49c59
+:OWLObjectProperty_7b61561b_a37c_475d_b2bb_7eac94c49c59 rdf:type owl:ObjectProperty ,
+                                                                 owl:TransitiveProperty ;
+                                                        rdfs:domain :OWLClass_2c2590f6_401b_44e4_ba99_d1d426c16165 ;
+                                                        rdfs:range :OWLClass_2c2590f6_401b_44e4_ba99_d1d426c16165 ;
+                                                        rdfs:label "est situé dans"@fr .
+
+
+###  http://www.semanticweb.org/florianleon/ontologies/2021/11/TP1#OWLObjectProperty_8598ecb7_d2a8_4008_b16e_04233b5fd2a2
+:OWLObjectProperty_8598ecb7_d2a8_4008_b16e_04233b5fd2a2 rdf:type owl:ObjectProperty ;
+                                                        rdfs:domain :OWLClass_1b7ff424_4e03_4a62_b808_561897b69365 ;
+                                                        rdfs:range :OWLClass_bcc8181d_02f0_4f07_9420_d2d2c9ce2a03 ;
+                                                        rdfs:label "debute"@fr .
+
+
+###  http://www.semanticweb.org/florianleon/ontologies/2021/11/TP1#OWLObjectProperty_9d2b16b8_eec8_4fa3_8b05_5c632dfc2e77
+:OWLObjectProperty_9d2b16b8_eec8_4fa3_8b05_5c632dfc2e77 rdf:type owl:ObjectProperty ;
+                                                        rdfs:domain :OWLClass_1b7ff424_4e03_4a62_b808_561897b69365 ;
+                                                        rdfs:range :OWLClass_d49d9033_e9f5_4a0d_ac06_65d8b31096fc ;
+                                                        rdfs:label "est caractérisé par"@fr .
+
+
+###  http://www.semanticweb.org/florianleon/ontologies/2021/11/TP1#OWLObjectProperty_c2a03189_7a69_4aa4_99f8_cd927ee1f401
+:OWLObjectProperty_c2a03189_7a69_4aa4_99f8_cd927ee1f401 rdf:type owl:ObjectProperty ;
+                                                        rdfs:domain :OWLClass_914fe159_dc32_4fc8_994a_73b6fb77ab17 ;
+                                                        rdfs:range :OWLClass_bcc8181d_02f0_4f07_9420_d2d2c9ce2a03 ;
+                                                        rdfs:label "a pour date"@fr .
+
+
+###  http://www.semanticweb.org/florianleon/ontologies/2021/11/TP1#OWLObjectProperty_c39d45cd_09f4_48e5_ac1f_37536a44316e
+:OWLObjectProperty_c39d45cd_09f4_48e5_ac1f_37536a44316e rdf:type owl:ObjectProperty ;
+                                                        rdfs:domain :OWLClass_914fe159_dc32_4fc8_994a_73b6fb77ab17 ;
+                                                        rdfs:range :OWLClass_2c2590f6_401b_44e4_ba99_d1d426c16165 ;
+                                                        rdfs:label "a pour localisation"@fr .
+
+
+###  http://www.semanticweb.org/florianleon/ontologies/2021/11/TP1#OWLObjectProperty_e3ef8426_5294_41ea_b4d7_eeb191b8fb83
+:OWLObjectProperty_e3ef8426_5294_41ea_b4d7_eeb191b8fb83 rdf:type owl:ObjectProperty ;
+                                                        rdfs:domain :OWLClass_1b7ff424_4e03_4a62_b808_561897b69365 ;
+                                                        rdfs:range [ rdf:type owl:Restriction ;
+                                                                     owl:onProperty :OWLDataProperty_eab51858_afb5_43c2_ac31_16a79c728bff ;
+                                                                     owl:someValuesFrom xsd:positiveInteger
+                                                                   ] ;
+                                                        rdfs:label "a une durée"@fr .
+
+
+###  http://www.semanticweb.org/florianleon/ontologies/2021/11/TP1#OWLObjectProperty_ecd5c25f_b538_4a92_9049_c691d6116279
+:OWLObjectProperty_ecd5c25f_b538_4a92_9049_c691d6116279 rdf:type owl:ObjectProperty ;
+                                                        rdfs:domain :OWLClass_1b7ff424_4e03_4a62_b808_561897b69365 ;
+                                                        rdfs:range :OWLClass_bcc8181d_02f0_4f07_9420_d2d2c9ce2a03 ;
+                                                        rdfs:label "finit"@fr .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/florianleon/ontologies/2021/11/TP1#OWLDataProperty_a176f0b4_68cc_44a3_ba64_e4967111c561
+:OWLDataProperty_a176f0b4_68cc_44a3_ba64_e4967111c561 rdf:type owl:DatatypeProperty ;
+                                                      rdfs:domain :OWLClass_914fe159_dc32_4fc8_994a_73b6fb77ab17 ;
+                                                      rdfs:range xsd:float ;
+                                                      rdfs:label "a une valeur"@fr .
+
+
+###  http://www.semanticweb.org/florianleon/ontologies/2021/11/TP1#OWLDataProperty_b8d74df9_cbca_4a25_a823_084e18061d86
+:OWLDataProperty_b8d74df9_cbca_4a25_a823_084e18061d86 rdf:type owl:DatatypeProperty ;
+                                                      rdfs:domain :OWLClass_bcc8181d_02f0_4f07_9420_d2d2c9ce2a03 ;
+                                                      rdfs:range xsd:dateTimeStamp ;
+                                                      rdfs:label "timestamp"@fr .
+
+
+###  http://www.semanticweb.org/florianleon/ontologies/2021/11/TP1#OWLDataProperty_eab51858_afb5_43c2_ac31_16a79c728bff
+:OWLDataProperty_eab51858_afb5_43c2_ac31_16a79c728bff rdf:type owl:DatatypeProperty ;
+                                                      rdfs:range xsd:positiveInteger ;
+                                                      rdfs:label "minutes"@fr .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/florianleon/ontologies/2021/11/TP1#OWLClass_1b50ed23_be0e_4edf_a5dc_8b7e4f18fe3e
+:OWLClass_1b50ed23_be0e_4edf_a5dc_8b7e4f18fe3e rdf:type owl:Class ;
+                                               rdfs:subClassOf :OWLClass_2c2590f6_401b_44e4_ba99_d1d426c16165 ;
+                                               owl:disjointWith :OWLClass_fcecb7b0_1808_4828_bc14_90cca96dfe4e ;
+                                               rdfs:label "ville"@fr .
+
+
+###  http://www.semanticweb.org/florianleon/ontologies/2021/11/TP1#OWLClass_1b7ff424_4e03_4a62_b808_561897b69365
+:OWLClass_1b7ff424_4e03_4a62_b808_561897b69365 rdf:type owl:Class ;
+                                               rdfs:label "phénomène"@fr .
+
+
+###  http://www.semanticweb.org/florianleon/ontologies/2021/11/TP1#OWLClass_25372acf_b351_4cad_a2a6_50da40fc1bd4
+:OWLClass_25372acf_b351_4cad_a2a6_50da40fc1bd4 rdf:type owl:Class ;
+                                               rdfs:subClassOf :OWLClass_2c2590f6_401b_44e4_ba99_d1d426c16165 ;
+                                               rdfs:label "continent"@fr .
+
+
+###  http://www.semanticweb.org/florianleon/ontologies/2021/11/TP1#OWLClass_2c0196de_5529_4eb6_a673_5045ecc6fb33
+:OWLClass_2c0196de_5529_4eb6_a673_5045ecc6fb33 rdf:type owl:Class ;
+                                               rdfs:subClassOf :OWLClass_1b7ff424_4e03_4a62_b808_561897b69365 ;
+                                               rdfs:label "beau temps"@fr .
+
+
+###  http://www.semanticweb.org/florianleon/ontologies/2021/11/TP1#OWLClass_2c2590f6_401b_44e4_ba99_d1d426c16165
+:OWLClass_2c2590f6_401b_44e4_ba99_d1d426c16165 rdf:type owl:Class ;
+                                               rdfs:label "lieu"@fr .
+
+
+###  http://www.semanticweb.org/florianleon/ontologies/2021/11/TP1#OWLClass_3fd60763_65a6_4253_9496_5f118ee5aca2
+:OWLClass_3fd60763_65a6_4253_9496_5f118ee5aca2 rdf:type owl:Class ;
+                                               rdfs:subClassOf :OWLClass_2c0196de_5529_4eb6_a673_5045ecc6fb33 ;
+                                               rdfs:label "ensoleillement"@fr .
+
+
+###  http://www.semanticweb.org/florianleon/ontologies/2021/11/TP1#OWLClass_6b1a398f_b504_4c13_bb14_10feb33a68d2
+:OWLClass_6b1a398f_b504_4c13_bb14_10feb33a68d2 rdf:type owl:Class ;
+                                               rdfs:subClassOf :OWLClass_1b7ff424_4e03_4a62_b808_561897b69365 ;
+                                               rdfs:label "mauvais temps"@fr .
+
+
+###  http://www.semanticweb.org/florianleon/ontologies/2021/11/TP1#OWLClass_768d3a1d_aa7f_4ebd_afc2_41bce314dcdc
+:OWLClass_768d3a1d_aa7f_4ebd_afc2_41bce314dcdc rdf:type owl:Class ;
+                                               rdfs:subClassOf [ owl:intersectionOf ( :OWLClass_1b7ff424_4e03_4a62_b808_561897b69365
+                                                                                      [ rdf:type owl:Restriction ;
+                                                                                        owl:onProperty :OWLObjectProperty_e3ef8426_5294_41ea_b4d7_eeb191b8fb83 ;
+                                                                                        owl:someValuesFrom [ rdf:type owl:Restriction ;
+                                                                                                             owl:onProperty :OWLDataProperty_eab51858_afb5_43c2_ac31_16a79c728bff ;
+                                                                                                             owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                                                                  owl:onDatatype xsd:positiveInteger ;
+                                                                                                                                  owl:withRestrictions ( [ xsd:maxExclusive "15"^^xsd:positiveInteger
+                                                                                                                                                         ]
+                                                                                                                                                       )
+                                                                                                                                ]
+                                                                                                           ]
+                                                                                      ]
+                                                                                    ) ;
+                                                                 rdf:type owl:Class
+                                                               ] ;
+                                               owl:disjointWith :OWLClass_db19a506_7d31_48bc_b817_319746d4fe35 ;
+                                               rdfs:label "phénomène court"@fr .
+
+
+###  http://www.semanticweb.org/florianleon/ontologies/2021/11/TP1#OWLClass_8e195e96_b3f7_4fd4_badd_741d02d6c0ef
+:OWLClass_8e195e96_b3f7_4fd4_badd_741d02d6c0ef rdf:type owl:Class ;
+                                               rdfs:subClassOf [ owl:intersectionOf ( :OWLClass_6b1a398f_b504_4c13_bb14_10feb33a68d2
+                                                                                      [ rdf:type owl:Restriction ;
+                                                                                        owl:onProperty :OWLObjectProperty_1ae9bc31_6162_4d52_aece_25843020f9c0 ;
+                                                                                        owl:someValuesFrom [ owl:intersectionOf ( :OWLClass_914fe159_dc32_4fc8_994a_73b6fb77ab17
+                                                                                                                                  [ rdf:type owl:Restriction ;
+                                                                                                                                    owl:onProperty :OWLObjectProperty_4035681a_e8d5_4302_b0af_b258a5825000 ;
+                                                                                                                                    owl:hasValue :OWLNamedIndividual_c2e15429_4d6d_4211_bb29_4821790a33dd
+                                                                                                                                  ]
+                                                                                                                                  [ rdf:type owl:Restriction ;
+                                                                                                                                    owl:onProperty :OWLDataProperty_a176f0b4_68cc_44a3_ba64_e4967111c561 ;
+                                                                                                                                    owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                                                                                         owl:onDatatype xsd:float ;
+                                                                                                                                                         owl:withRestrictions ( [ xsd:minExclusive "0.0"^^xsd:float
+                                                                                                                                                                                ]
+                                                                                                                                                                              )
+                                                                                                                                                       ]
+                                                                                                                                  ]
+                                                                                                                                ) ;
+                                                                                                             rdf:type owl:Class
+                                                                                                           ]
+                                                                                      ]
+                                                                                    ) ;
+                                                                 rdf:type owl:Class
+                                                               ] ;
+                                               rdfs:label "pluie"@fr .
+
+
+###  http://www.semanticweb.org/florianleon/ontologies/2021/11/TP1#OWLClass_914fe159_dc32_4fc8_994a_73b6fb77ab17
+:OWLClass_914fe159_dc32_4fc8_994a_73b6fb77ab17 rdf:type owl:Class ;
+                                               rdfs:label "observation"@fr .
+
+
+###  http://www.semanticweb.org/florianleon/ontologies/2021/11/TP1#OWLClass_b1b79f82_0ba3_4f97_81bd_63e136430897
+:OWLClass_b1b79f82_0ba3_4f97_81bd_63e136430897 rdf:type owl:Class ;
+                                               rdfs:subClassOf :OWLClass_6b1a398f_b504_4c13_bb14_10feb33a68d2 ;
+                                               rdfs:label "brouillard"@fr .
+
+
+###  http://www.semanticweb.org/florianleon/ontologies/2021/11/TP1#OWLClass_bcc8181d_02f0_4f07_9420_d2d2c9ce2a03
+:OWLClass_bcc8181d_02f0_4f07_9420_d2d2c9ce2a03 rdf:type owl:Class ;
+                                               rdfs:label "instant"@fr .
+
+
+###  http://www.semanticweb.org/florianleon/ontologies/2021/11/TP1#OWLClass_d49d9033_e9f5_4a0d_ac06_65d8b31096fc
+:OWLClass_d49d9033_e9f5_4a0d_ac06_65d8b31096fc rdf:type owl:Class ;
+                                               rdfs:label "paramètre mesurable"@fr .
+
+
+###  http://www.semanticweb.org/florianleon/ontologies/2021/11/TP1#OWLClass_db19a506_7d31_48bc_b817_319746d4fe35
+:OWLClass_db19a506_7d31_48bc_b817_319746d4fe35 rdf:type owl:Class ;
+                                               rdfs:subClassOf [ owl:intersectionOf ( :OWLClass_1b7ff424_4e03_4a62_b808_561897b69365
+                                                                                      [ rdf:type owl:Restriction ;
+                                                                                        owl:onProperty :OWLObjectProperty_e3ef8426_5294_41ea_b4d7_eeb191b8fb83 ;
+                                                                                        owl:someValuesFrom [ rdf:type owl:Restriction ;
+                                                                                                             owl:onProperty :OWLDataProperty_eab51858_afb5_43c2_ac31_16a79c728bff ;
+                                                                                                             owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                                                                  owl:onDatatype xsd:positiveInteger ;
+                                                                                                                                  owl:withRestrictions ( [ xsd:minInclusive "15"^^xsd:positiveInteger
+                                                                                                                                                         ]
+                                                                                                                                                       )
+                                                                                                                                ]
+                                                                                                           ]
+                                                                                      ]
+                                                                                    ) ;
+                                                                 rdf:type owl:Class
+                                                               ] ;
+                                               rdfs:label "phénomène long"@fr .
+
+
+###  http://www.semanticweb.org/florianleon/ontologies/2021/11/TP1#OWLClass_fcecb7b0_1808_4828_bc14_90cca96dfe4e
+:OWLClass_fcecb7b0_1808_4828_bc14_90cca96dfe4e rdf:type owl:Class ;
+                                               rdfs:subClassOf :OWLClass_2c2590f6_401b_44e4_ba99_d1d426c16165 ;
+                                               rdfs:label "pays"@fr .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/florianleon/ontologies/2021/11/TP1#OWLNamedIndividual_080f00dd_0447_40cf_a617_2d0af15e7030
+:OWLNamedIndividual_080f00dd_0447_40cf_a617_2d0af15e7030 rdf:type owl:NamedIndividual ,
+                                                                  :OWLClass_d49d9033_e9f5_4a0d_ac06_65d8b31096fc ;
+                                                         rdfs:label "pression atmosphérique"@fr .
+
+
+###  http://www.semanticweb.org/florianleon/ontologies/2021/11/TP1#OWLNamedIndividual_0fe94465_3680_4c2b_a094_829a80c8ebfe
+:OWLNamedIndividual_0fe94465_3680_4c2b_a094_829a80c8ebfe rdf:type owl:NamedIndividual ,
+                                                                  :OWLClass_d49d9033_e9f5_4a0d_ac06_65d8b31096fc ;
+                                                         owl:sameAs :OWLNamedIndividual_122e19be_919f_4020_8784_393357743bf2 ;
+                                                         rdfs:label "force du vent"@fr .
+
+
+###  http://www.semanticweb.org/florianleon/ontologies/2021/11/TP1#OWLNamedIndividual_10b3a0ea_71a1_4909_b7d4_5e301524b8b3
+:OWLNamedIndividual_10b3a0ea_71a1_4909_b7d4_5e301524b8b3 rdf:type owl:NamedIndividual ;
+                                                         rdfs:label "Europe"@fr .
+
+
+###  http://www.semanticweb.org/florianleon/ontologies/2021/11/TP1#OWLNamedIndividual_122e19be_919f_4020_8784_393357743bf2
+:OWLNamedIndividual_122e19be_919f_4020_8784_393357743bf2 rdf:type owl:NamedIndividual ,
+                                                                  :OWLClass_d49d9033_e9f5_4a0d_ac06_65d8b31096fc ;
+                                                         rdfs:label "vitesse du vent"@fr .
+
+
+###  http://www.semanticweb.org/florianleon/ontologies/2021/11/TP1#OWLNamedIndividual_137b0feb_8f2b_40fb_b06e_fa3d2d6f135a
+:OWLNamedIndividual_137b0feb_8f2b_40fb_b06e_fa3d2d6f135a rdf:type owl:NamedIndividual ;
+                                                         :OWLObjectProperty_1ae9bc31_6162_4d52_aece_25843020f9c0 :OWLNamedIndividual_3e361d0c_464d_424f_bb98_72cc7c245795 ;
+                                                         rdfs:label "A1"@fr .
+
+
+###  http://www.semanticweb.org/florianleon/ontologies/2021/11/TP1#OWLNamedIndividual_3e011515_471e_417f_9a74_be1bf8e6de66
+:OWLNamedIndividual_3e011515_471e_417f_9a74_be1bf8e6de66 rdf:type owl:NamedIndividual ;
+                                                         rdfs:label "La Ville Lumière"@fr .
+
+
+###  http://www.semanticweb.org/florianleon/ontologies/2021/11/TP1#OWLNamedIndividual_3e361d0c_464d_424f_bb98_72cc7c245795
+:OWLNamedIndividual_3e361d0c_464d_424f_bb98_72cc7c245795 rdf:type owl:NamedIndividual ,
+                                                                  :OWLClass_914fe159_dc32_4fc8_994a_73b6fb77ab17 ;
+                                                         :OWLObjectProperty_c2a03189_7a69_4aa4_99f8_cd927ee1f401 :OWLNamedIndividual_e12f5eb6_c10a_4038_8d24_bc0e094aec6b ;
+                                                         :OWLDataProperty_a176f0b4_68cc_44a3_ba64_e4967111c561 "3.0"^^xsd:float ;
+                                                         rdfs:label "P1"@fr .
+
+
+###  http://www.semanticweb.org/florianleon/ontologies/2021/11/TP1#OWLNamedIndividual_4bed65fb_0f66_40cb_8378_b44b68661ce0
+:OWLNamedIndividual_4bed65fb_0f66_40cb_8378_b44b68661ce0 rdf:type owl:NamedIndividual ,
+                                                                  :OWLClass_1b50ed23_be0e_4edf_a5dc_8b7e4f18fe3e ;
+                                                         :OWLObjectProperty_7b61561b_a37c_475d_b2bb_7eac94c49c59 :OWLNamedIndividual_5fa19ff3_a588_4f79_ba17_3f089d951c92 ;
+                                                         rdfs:label "Toulouse"@fr .
+
+
+###  http://www.semanticweb.org/florianleon/ontologies/2021/11/TP1#OWLNamedIndividual_5fa19ff3_a588_4f79_ba17_3f089d951c92
+:OWLNamedIndividual_5fa19ff3_a588_4f79_ba17_3f089d951c92 rdf:type owl:NamedIndividual ;
+                                                         :OWLObjectProperty_58eae586_10e3_4636_86d4_c774310f5c60 :OWLNamedIndividual_3e011515_471e_417f_9a74_be1bf8e6de66 ,
+                                                                                                                 :OWLNamedIndividual_fc7d2c8d_0915_4ed4_bf4e_ba0467dd2d98 ;
+                                                         :OWLObjectProperty_7b61561b_a37c_475d_b2bb_7eac94c49c59 :OWLNamedIndividual_10b3a0ea_71a1_4909_b7d4_5e301524b8b3 ;
+                                                         rdfs:label "France"@fr .
+
+
+###  http://www.semanticweb.org/florianleon/ontologies/2021/11/TP1#OWLNamedIndividual_66da9c86_f9da_4045_8b14_9555668a0153
+:OWLNamedIndividual_66da9c86_f9da_4045_8b14_9555668a0153 rdf:type owl:NamedIndividual ,
+                                                                  :OWLClass_d49d9033_e9f5_4a0d_ac06_65d8b31096fc ;
+                                                         rdfs:label "temperature"@en ,
+                                                                    "température"@fr .
+
+
+###  http://www.semanticweb.org/florianleon/ontologies/2021/11/TP1#OWLNamedIndividual_c2e15429_4d6d_4211_bb29_4821790a33dd
+:OWLNamedIndividual_c2e15429_4d6d_4211_bb29_4821790a33dd rdf:type owl:NamedIndividual ,
+                                                                  :OWLClass_d49d9033_e9f5_4a0d_ac06_65d8b31096fc ;
+                                                         rdfs:label "pluviomètrie"@fr .
+
+
+###  http://www.semanticweb.org/florianleon/ontologies/2021/11/TP1#OWLNamedIndividual_d6f0f066_dfa2_4171_9ff0_becc0e1cddde
+:OWLNamedIndividual_d6f0f066_dfa2_4171_9ff0_becc0e1cddde rdf:type owl:NamedIndividual ;
+                                                         rdfs:label "Singapour"@fr .
+
+
+###  http://www.semanticweb.org/florianleon/ontologies/2021/11/TP1#OWLNamedIndividual_e12f5eb6_c10a_4038_8d24_bc0e094aec6b
+:OWLNamedIndividual_e12f5eb6_c10a_4038_8d24_bc0e094aec6b rdf:type owl:NamedIndividual ,
+                                                                  :OWLClass_bcc8181d_02f0_4f07_9420_d2d2c9ce2a03 ;
+                                                         :OWLObjectProperty_c2a03189_7a69_4aa4_99f8_cd927ee1f401 :OWLNamedIndividual_e12f5eb6_c10a_4038_8d24_bc0e094aec6b ;
+                                                         :OWLDataProperty_b8d74df9_cbca_4a25_a823_084e18061d86 "2015-11-10T10:00:00Z"^^xsd:dateTimeStamp ;
+                                                         rdfs:label "I1"@fr .
+
+
+###  http://www.semanticweb.org/florianleon/ontologies/2021/11/TP1#OWLNamedIndividual_f95a8afe_c127_4b58_920a_5c02787c7e1f
+:OWLNamedIndividual_f95a8afe_c127_4b58_920a_5c02787c7e1f rdf:type owl:NamedIndividual ,
+                                                                  :OWLClass_d49d9033_e9f5_4a0d_ac06_65d8b31096fc ;
+                                                         rdfs:label "hygrométrie"@fr .
+
+
+###  http://www.semanticweb.org/florianleon/ontologies/2021/11/TP1#OWLNamedIndividual_fc7d2c8d_0915_4ed4_bf4e_ba0467dd2d98
+:OWLNamedIndividual_fc7d2c8d_0915_4ed4_bf4e_ba0467dd2d98 rdf:type owl:NamedIndividual ;
+                                                         rdfs:label "Paris"@fr .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
